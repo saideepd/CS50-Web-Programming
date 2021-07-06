@@ -1,0 +1,5 @@
+Django/lecture3/lecture3/__pycache__
+Django/lecture3/hello/__pycache__
+Django/lecture3/hello/migrations/__pycache__
+Python/__pycache__
+*.pyc
