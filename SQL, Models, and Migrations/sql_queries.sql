@@ -66,3 +66,15 @@ SELECT * FROM flights ORDER BY duration DESC;
 
 -- Query to view limited data from flights table
 SELECT * FROM flights GROUP BY origin HAVING COUNT(origin) > 1;
+
+-- Joins between tables
+    -- JOIN / INNER JOIN
+    -- LEFT OUTER JOIN
+    -- RIGHT OUTER JOIN
+    -- FULL OUTER JOIN
+SELECT firstname, origin, destination 
+FROM flights JOIN passengers
+ON passengers.flight_id = flights.id
+
+-- Index on table
+CREATE INDEX name_index on passengers (last);
